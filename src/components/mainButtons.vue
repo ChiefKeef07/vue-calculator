@@ -1,5 +1,5 @@
 <template>
-   <div class="w-1/2">
+   <div class="mr-2">
         <div class="mb-2 w-full">
             <button class="btn">7</button>
             <button class="btn">8</button>
@@ -17,8 +17,8 @@
         </div>
         <div class="mb-2 w-full">
             <button class="btn">0</button>
-            <button class="btn">Clr</button>
-            <button class="btn">Ent</button>
+            <button class="btn">.</button>
+            <button class="btn">=</button>
         </div>
    </div>
 </template>
