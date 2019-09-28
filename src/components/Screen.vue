@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-blue-100 border m-6 px-8 text-right w-full">
+    <div class="bg-blue-100 border mb-2 px-8 text-right w-full">
         <span>{{result}}</span>
     </div>
 </template>
