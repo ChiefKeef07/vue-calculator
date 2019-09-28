@@ -1,28 +1,22 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="VUE Calculator"/>
+  <div class="flex justify-center mt-8 w-full">
+    <div class="border border-gray-300 flex justify-center rounded shadow-md w-1/2">
+      <Screen></Screen>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Screen from './components/Screen.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Screen,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>

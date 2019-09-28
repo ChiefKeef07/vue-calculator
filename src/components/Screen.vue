@@ -1,11 +1,6 @@
 <template>
-    <div>
-        <div>
-            <input type="number" v-model="number"/>
-        </div>
-        <div>
-            <span>{{result}}</span>
-        </div>
+    <div class="bg-blue-100 border m-6 px-8 text-right w-full">
+        <span>{{result}}</span>
     </div>
 </template>
 
@@ -17,9 +12,8 @@ export default {
     },
     data() {
         return {
-            number: 0,
             result: 0,
-        },
+        }
     },
 }
 </script>
