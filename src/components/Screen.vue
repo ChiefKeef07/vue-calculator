@@ -1,6 +1,6 @@
 <template>
     <div class="bg-blue-100 border mb-2 px-8 text-right w-full">
-        <span>{{result}}</span>
+        <span>{{screenValue}}</span>
     </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
     name: 'Screen',
     props: {
-
+        screenValue: Number,
     },
     data() {
         return {
