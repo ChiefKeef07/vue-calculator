@@ -1,8 +1,8 @@
 <template>
   <div class="flex justify-center mt-8 w-full">
     <div class="border border-gray-300 flex flex-wrap p-6 rounded shadow-md w-1/2">
-      <Screen></Screen>
-      <mainButtons></mainButtons>
+      <Screen :screenValue="screenValue"></Screen>
+      <mainButtons @input="updateScreen"></mainButtons>
       <basicMathButtons></basicMathButtons>
     </div>
   </div>
@@ -19,6 +19,16 @@ export default {
     basicMathButtons,
     mainButtons,
     Screen,
+  },
+  data() {
+    return{
+      screenValue: 0,
+    }
+  },
+  methods: {
+    updateScreen(val) {
+      this.screenValue = (this.screenValue*10) + val;
+    }
   }
 }
 </script>

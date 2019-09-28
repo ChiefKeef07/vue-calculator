@@ -1,24 +1,24 @@
 <template>
    <div class="mr-2">
         <div class="mb-2 w-full">
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
+            <button class="btn" @click="buttonClick(7)">7</button>
+            <button class="btn" @click="buttonClick(8)">8</button>
+            <button class="btn" @click="buttonClick(9)">9</button>
         </div>
         <div class="mb-2 w-full">
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
+            <button class="btn" @click="buttonClick(4)">4</button>
+            <button class="btn" @click="buttonClick(5)">5</button>
+            <button class="btn" @click="buttonClick(6)">6</button>
         </div>
         <div class="mb-2 w-full">
-            <button class="btn">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
+            <button class="btn" @click="buttonClick(1)">1</button>
+            <button class="btn" @click="buttonClick(2)">2</button>
+            <button class="btn" @click="buttonClick(3)">3</button>
         </div>
         <div class="mb-2 w-full">
-            <button class="btn">0</button>
-            <button class="btn">.</button>
-            <button class="btn">=</button>
+            <button class="btn" @click="buttonClick(0)">0</button>
+            <button class="btn" @click="buttonClick('clr')">.</button>
+            <button class="btn" @click="buttonClick('ent')">=</button>
         </div>
    </div>
 </template>
@@ -34,6 +34,13 @@ export default {
             
         }
     },
+    methods: {
+        buttonClick(value) {
+            if (!isNaN(value)) {
+                this.$emit('input', value);
+            }
+        }
+    }
 }
 </script>
 
